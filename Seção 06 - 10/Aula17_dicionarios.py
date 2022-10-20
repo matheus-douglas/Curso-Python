@@ -147,3 +147,59 @@ exemplo3 = {'jan': 100, 'fev': 120, 'mar': 160}
 
 del exemplo3['fev']
 print(exemplo3)
+
+# [9] Alguns métodos de dicionários:----------------------------------------------------------------
+
+d = dict(a=1, b=2, c=3)
+print(d)
+print(type(d))
+
+    # (1) Limpar dicionário: .clear()
+
+d.clear()
+print(d)
+
+    # (2) Copiando um dicionário para outro: .copy()
+
+        # 1 ---------------------------------------
+novo = d.copy()  # Deep Copy
+print(novo)
+
+novo['d'] = 4
+print(novo)
+
+print(d)
+print(novo)
+
+        # 2 ---------------------------------------
+
+novo = d  # Shalow Copy
+
+print(novo)
+novo['e'] = 5
+
+print(d)
+print(novo)
+
+    # (3) Forma não usual de criação de dicionário: .fromkeys()
+
+        # Exemplo 1: Gera uma chave e atribui um valor;
+outro ={}.fromkeys('a', '3')
+print(outro)
+print(type(outro))
+
+        # Exemplo 2: Gera uma lista de chaves/key com um mesmo valor atribuido a todas elas;
+usuario = {}.fromkeys(['nome', 'senha', 'email', 'profile'], 'desconhecido')
+print(usuario)
+print(type(usuario))
+
+    # Obs: O método fromkeys recebe dois parâmetros: um iterável e um valor;
+    # Ele vair gerar para cada valor do iterável uma chave e irá atribuir a chave o valor informado
+
+        # Exemplo 3: Gera uma chave com cada str e atribui o mesmo valor a todas chaves:
+veja = {}.fromkeys('teste', 'valor')
+print(veja)
+
+        # Exemplo 4: Cria um range e atribui um valor a cada chave/key do range:
+ran = {}.fromkeys(range(1, 11), 'novo')
+print(ran)
