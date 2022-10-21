@@ -27,25 +27,25 @@ com chaves, valores e itens duplicados.
 
     # Forma 1:
 
-s = set({1, 2, 3, 4, 5, 5, 6, 7, 2, 3})  # Repare que temos valores repetidos.
-print(s)
-print(type(s))
+# s = set({1, 2, 3, 4, 5, 5, 6, 7, 2, 3})  # Repare que temos valores repetidos.
+# print(s)
+# print(type(s))
 
 # Obs: Ao criar um conjunto, caso seja adicionado um valor já existente, o mesmo
 # será ignorado sem gerar error e não fará parde do conjunto.
 
     # Froma 2: - Mais comum
 
-s = {1, 2, 3, 4, 5, 5}  # Valores repetidos, são ignorados
-print(s)
-print(type(s))
+# s = {1, 2, 3, 4, 5, 5}  # Valores repetidos, são ignorados
+# print(s)
+# print(type(s))
 
 # [2] Podemos verificar se determinado elemento está contido no conjunto:
 
-if 3 in s:
-    print('Está contido')
-else:
-    print('Não está contido')
+# if 3 in s:
+#    print('Está contido')
+# else:
+#    print('Não está contido')
 
 # [3] Importante lembrar que, além de não termos valores duplicados, não temos ordem;
 
