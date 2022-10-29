@@ -2,11 +2,11 @@
 
 """
 - O *args é um parâmetros como outro qualquer. isso significa que você poderá
-chamar de quakquer coisa, desde que começe com asterisco
+chamar de qualquer coisa, desde que começe com asterisco
 
 Exemplo:
 
-    *xis
+    *qualquercoisa
 
 Mas por convenção, utilizamos o *args para definí-lo
 
