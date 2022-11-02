@@ -53,3 +53,4 @@ por exemplo:
 # print(nome[0:7]) -> Slice de String
 # print(nome[::-1]) -> [::-1] Comece do primeiro elemento, vá até o ultimo e inverta a ordem
 # print(nome.replace('d', 'T')) -> Substitui o caracter por outro denro da string
+# print(f'{(valor que for passado):,.nf}') -> onde n é o número de casas decimais que seram retornados
